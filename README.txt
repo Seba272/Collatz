@@ -17,7 +17,16 @@ To make things happen, run
 	and it will be asked you a value for MAX (positive integer, please)
 Two files will be generated: 
 	- collatzTo1-"$MAX".gv : this is a representation of the graph, 
+			in dot format ( https://en.wikipedia.org/wiki/DOT_(graph_description_language) )
 			as input for the program 'dot'
 	- collatzTo1-"$MAX".png : this picture is the output of 'dot'
 
+What you need to be installed on your computer:
+- Python3
+- Python modules ( $ python -m pip install "module" ):
+		* matplotlib.pyplot
+		* networkx
+		* sys
+- dot from Graphviz, as in http://www.graphviz.org/documentation/
+		see also https://en.wikipedia.org/wiki/Graphviz
 
