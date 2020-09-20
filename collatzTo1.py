@@ -28,7 +28,7 @@ for k in disp:
 #print("Edges of graph: ")
 #print(G.edges())
 
-with open("graph02-"+str(MAX)+".gv","w") as OF:
+with open("collatzTo1-"+str(MAX)+".gv","w") as OF:
     OF.write("digraph G {\n")
     for edge in G.edges():
         OF.write("\t" + str(edge[0]) + " -> " + str(edge[1]) + "\n")
