@@ -15,6 +15,9 @@ Given a number MAX, for every odd k<2MAX+1, it finds its way
 To make things happen, run
 	$ ./collatzTo1.sh
 	and it will be asked you a value for MAX (positive integer, please)
+It is possible to hide all multiples of 3 (answer 'y' to the second question);
+	this makes sense because multples of 3 are dead nodes (nothing points to them): 
+	if n is an odd integer, then 3n+1 is not a multiple of 3.
 Two files will be generated: 
 	- collatzTo1-"$MAX".gv : this is a representation of the graph, 
 			in dot format ( https://en.wikipedia.org/wiki/DOT_(graph_description_language) )

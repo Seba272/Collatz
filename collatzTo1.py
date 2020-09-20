@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import sys
 MAX=int(sys.argv[1])
-print("MAX is: ")
-print(MAX)
+no3=sys.argv[2]
+#print("MAX is: ")
+#print(MAX)
 
 def dispari(x):
     while (x%2==0):
@@ -13,6 +14,10 @@ def dispari(x):
 def thefun(x):
     return(dispari(3*dispari(x)+1))
 disp=[2*j+1 for j in range(MAX)]
+if no3=="y":
+    for num in disp:
+        if num%3==0:
+            disp.remove(num)
 G=nx.DiGraph()
 for k in disp:
     a=k
