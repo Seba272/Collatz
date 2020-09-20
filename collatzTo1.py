@@ -33,6 +33,9 @@ for k in disp:
 #print("Edges of graph: ")
 #print(G.edges())
 
+print("Number of nodes: ",len(G.nodes()))
+#print("Number of edges: ",G.size())
+
 with open("collatzTo1-"+str(MAX)+".gv","w") as OF:
     OF.write("digraph G {\n")
     for edge in G.edges():
